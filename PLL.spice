@@ -1,0 +1,52 @@
+* SPICE3 file created from PLL.ext - technology: min2
+
+.option scale=0.09u
+
+M1000 i2 i2 inA w_84_n216# pmos w=10 l=2
++  ad=300 pd=180 as=50 ps=30
+M1001 i3 i2 ps2 w_75_n41# pmos w=10 l=2
++  ad=50 pd=30 as=100 ps=60
+M1002 i2 inA i2 w_133_n216# pmos w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1003 ptd0 i2 gnd gnd nmos w=10 l=2
++  ad=50 pd=30 as=200 ps=120
+M1004 i3 i2 ns2 gnd nmos w=10 l=2
++  ad=50 pd=30 as=100 ps=60
+M1005 gnd i2 ns1 gnd nmos w=10 l=2
++  ad=0 pd=0 as=100 ps=60
+M1006 ptd0 i2 vdd vdd pmos w=10 l=2
++  ad=50 pd=30 as=200 ps=120
+M1007 vdd i2 ps2 vdd pmos w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1008 i2 i3 ps3 w_113_n41# pmos w=10 l=2
++  ad=0 pd=0 as=100 ps=60
+M1009 gnd i2 ns2 gnd nmos w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1010 i2 i3 ns3 gnd nmos w=10 l=2
++  ad=350 pd=210 as=100 ps=60
+M1011 vdd i2 ps3 vdd pmos w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1012 i2 inA gnd gnd nmos w=10 l=2
++  ad=0 pd=0 as=50 ps=30
+M1013 i2 i2 ps1 w_38_n41# pmos w=10 l=2
++  ad=0 pd=0 as=100 ps=60
+M1014 i2 i2 i2 gnd nmos w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1015 i2 i2 ns1 gnd nmos w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1016 gnd i2 ns3 gnd nmos w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1017 i2 inA vdd vdd pmos w=10 l=2
++  ad=0 pd=0 as=50 ps=30
+M1018 i2 i2 i2 gnd nmos w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1019 vdd i2 ps1 vdd pmos w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 gnd gnd 2.46fF
+C1 i2 gnd 16.67fF
+C2 i3 gnd 3.25fF
+C3 ps3 gnd 2.88fF
+C4 ps2 gnd 2.88fF
+C5 ps1 gnd 2.88fF
+C6 vdd gnd 3.37fF
+C7 vdd gnd 6.23fF

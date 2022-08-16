@@ -1,0 +1,120 @@
+timestamp 1660384081
+version 8.3
+tech min2
+style lambda=0.09
+scale 1000 1000 9
+resistclasses 8000 8000 900000 900000 7400 80
+node "m1_9_n160#" 0 1.05718 9 -160 m1 0 0 0 0 0 0 0 0 0 0 2331 264
+node "gnd" 25 2.45618 39 -244 pdc 50 30 16 16 0 0 0 0 0 0 132 74
+node "in_a_bar" 199 5.54017 46 -232 ndiff 100 60 50 30 0 0 0 0 69 72 690 414
+equiv "in_a_bar" "out"
+node "inA" 488 3.09289 17 -220 pc 0 0 50 30 0 0 0 0 388 318 780 430
+node "a_xor_b" 2165 9.84027 11 -159 p 100 60 100 60 0 0 0 0 1111 1114 636 360
+equiv "a_xor_b" "out"
+equiv "a_xor_b" "out"
+node "ns3" 56 3.29256 120 -92 ndc 100 60 0 0 0 0 0 0 0 0 180 98
+equiv "ns3" "nbd3"
+node "ns2" 56 3.29256 82 -92 ndc 100 60 0 0 0 0 0 0 0 0 180 98
+equiv "ns2" "nbd2"
+node "ns1" 56 3.29256 45 -92 ndc 100 60 0 0 0 0 0 0 0 0 180 98
+equiv "ns1" "nbd1"
+node "i3" 222 3.26269 89 -57 ndiff 50 30 50 30 0 0 0 0 106 108 197 118
+equiv "i3" "nd2"
+equiv "i3" "pd2"
+node "i2" 221 3.27095 52 -57 ndiff 50 30 50 30 0 0 0 0 110 110 216 116
+equiv "i2" "nd1"
+equiv "i2" "pd1"
+equiv "i2" "out"
+node "ps3" 56 2.87892 120 -35 pdc 0 0 100 60 0 0 0 0 0 0 204 110
+equiv "ps3" "ptd3"
+node "ps2" 56 2.8843 82 -35 pdc 0 0 100 60 0 0 0 0 0 0 204 110
+equiv "ps2" "ptd2"
+node "ps1" 56 2.87892 45 -35 pdc 0 0 100 60 0 0 0 0 0 0 204 110
+equiv "ps1" "ptd1"
+node "nbd0" 34 3.39732 13 -92 ndiff 50 30 50 30 0 0 0 0 0 0 432 224
+equiv "nbd0" "ptd0"
+node "vout" 1622 11.7047 -30 -45 pc 100 60 100 60 0 0 0 0 861 838 3550 1792
+equiv "vout" "inB"
+equiv "vout" "inB"
+equiv "vout" "inB"
+equiv "vout" "inB"
+equiv "vout" "nd3"
+equiv "vout" "pd3"
+equiv "vout" "out"
+node "w_133_n216#" 1017 0.300196 133 -216 nw 0 0 0 0 598 98 0 0 0 0 0 0
+node "w_84_n216#" 1017 0.300196 84 -216 nw 0 0 0 0 598 98 0 0 0 0 0 0
+node "vdd" 1450 3.40101 32 -216 nw 24 28 50 30 1040 132 0 0 0 0 194 116
+node "w_113_n41#" 1017 0.300196 113 -41 nw 0 0 0 0 598 98 0 0 0 0 0 0
+node "w_75_n41#" 1017 0.300196 75 -41 nw 0 0 0 0 598 98 0 0 0 0 0 0
+node "w_38_n41#" 1017 0.300196 38 -41 nw 0 0 0 0 598 98 0 0 0 0 0 0
+node "vdd!" 13050 17.7319 -1 -1 nw 192 192 200 120 2886 430 0 0 0 0 776 396
+substrate "nbs3" 0 0 6 -92 ndc 200 120 144 144 0 0 0 0 0 0 792 404
+equiv "nbs3" "nbs2"
+equiv "nbs3" "nbs1"
+equiv "nbs3" "nbs0"
+equiv "nbs3" "gnd!"
+equiv "nbs3" "gnd!"
+equiv "nbs3" "gnd!"
+equiv "nbs3" "gnd!"
+equiv "nbs3" "gnd!"
+cap "w_75_n41#" "ps2" 0.066584
+cap "w_84_n216#" "vout" 0.080652
+cap "a_xor_b" "inA" 0.05652
+cap "vout" "in_a_bar" 0.07065
+cap "w_113_n41#" "vout" 0.061212
+cap "vdd!" "ps2" 0.061212
+cap "w_38_n41#" "ps1" 0.066584
+cap "w_133_n216#" "inA" 0.080652
+cap "vdd!" "nbd0" 0.066584
+cap "w_38_n41#" "vout" 0.080652
+cap "w_75_n41#" "i3" 0.061212
+cap "vout" "nbd0" 0.02928
+cap "a_xor_b" "m1_9_n160#" 0.35466
+cap "w_84_n216#" "a_xor_b" 0.061212
+cap "vdd" "inA" 0.085284
+cap "w_133_n216#" "vout" 0.066584
+cap "w_38_n41#" "i2" 0.061212
+cap "vdd!" "ps3" 0.066584
+cap "vdd!" "ps1" 0.066584
+cap "w_113_n41#" "i3" 0.060468
+cap "w_133_n216#" "a_xor_b" 0.061212
+cap "vdd" "in_a_bar" 0.061212
+cap "w_84_n216#" "inA" 0.066584
+cap "vdd!" "vout" 0.717756
+cap "w_113_n41#" "ps3" 0.066584
+cap "w_75_n41#" "i2" 0.060468
+device mosfet nmos 145 -239 146 -238 2 10 "nbs3" "in_a_bar" 4 0 "a_xor_b" 10 0 "vout" 10 0
+device mosfet nmos 96 -232 97 -231 2 10 "nbs3" "vout" 4 0 "in_a_bar" 10 0 "a_xor_b" 10 0
+device mosfet nmos 44 -232 45 -231 2 10 "nbs3" "inA" 4 0 "gnd" 10 0 "in_a_bar" 10 0
+device mosfet pmos 145 -210 146 -209 2 10 "w_133_n216#" "inA" 4 0 "a_xor_b" 10 0 "vout" 10 0
+device mosfet pmos 96 -210 97 -209 2 10 "w_84_n216#" "vout" 4 0 "inA" 10 0 "a_xor_b" 10 0
+device mosfet pmos 44 -210 45 -209 2 10 "vdd" "inA" 4 0 "vdd" 10 0 "in_a_bar" 10 0
+device mosfet nmos 125 -92 126 -91 2 10 "nbs3" "a_xor_b" 4 0 "ns3" 10 0 "nbs3" 10 0
+device mosfet nmos 87 -92 88 -91 2 10 "nbs3" "a_xor_b" 4 0 "ns2" 10 0 "nbs3" 10 0
+device mosfet nmos 50 -92 51 -91 2 10 "nbs3" "a_xor_b" 4 0 "ns1" 10 0 "nbs3" 10 0
+device mosfet nmos 11 -92 12 -91 2 10 "nbs3" "a_xor_b" 4 0 "nbs3" 10 0 "nbd0" 10 0
+device mosfet nmos 125 -57 126 -56 2 10 "nbs3" "i3" 4 0 "ns3" 10 0 "vout" 10 0
+device mosfet nmos 87 -57 88 -56 2 10 "nbs3" "i2" 4 0 "ns2" 10 0 "i3" 10 0
+device mosfet nmos 50 -57 51 -56 2 10 "nbs3" "vout" 4 0 "ns1" 10 0 "i2" 10 0
+device mosfet pmos 125 -35 126 -34 2 10 "w_113_n41#" "i3" 4 0 "ps3" 10 0 "vout" 10 0
+device mosfet pmos 87 -35 88 -34 2 10 "w_75_n41#" "i2" 4 0 "ps2" 10 0 "i3" 10 0
+device mosfet pmos 50 -35 51 -34 2 10 "w_38_n41#" "vout" 4 0 "ps1" 10 0 "i2" 10 0
+device mosfet pmos 125 6 126 7 2 10 "vdd!" "vout" 4 0 "ps3" 10 0 "vdd!" 10 0
+device mosfet pmos 87 6 88 7 2 10 "vdd!" "vout" 4 0 "ps2" 10 0 "vdd!" 10 0
+device mosfet pmos 50 6 51 7 2 10 "vdd!" "vout" 4 0 "ps1" 10 0 "vdd!" 10 0
+device mosfet pmos 11 6 12 7 2 10 "vdd!" "vout" 4 0 "vdd!" 10 0 "nbd0" 10 0
+subcap "in_a_bar" -2.51352
+subcap "inA" -2.80078
+subcap "vdd" -0.035722
+subcap "w_133_n216#" -0.265558
+subcap "ns1" -1.58159
+subcap "nbd0" -1.68635
+subcap "nbs3" -8.44464
+subcap "ns3" -1.58159
+subcap "ns2" -1.58159
+subcap "i2" -0.2443
+subcap "vout" -10.9252
+subcap "w_38_n41#" -0.034638
+subcap "vdd!" -11.5039
+subcap "i3" -0.01704
+subcap "w_113_n41#" -0.034638
